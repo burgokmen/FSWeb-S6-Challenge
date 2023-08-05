@@ -5,11 +5,12 @@ import { worker } from "./mocks/browser";
 
 import App from "./App";
 
+import "./reset.css";
 import "./index.css";
 import "./App.css";
 
 worker.start();
 
 const container = document.getElementById("root");
-const root = createRoot(container)
+const root = createRoot(container);
 root.render(<App />);
